@@ -1,0 +1,61 @@
+[DEFAULT]
+
+git_pushdocs =
+	if [ -f docs/Makefile ] && [ -f docs/index.rst ]
+	then
+		REPO=$(basename "$MR_REPO")
+		BUILD_DIR="$(mktemp -d)"
+		echo trap "rm -rf $BUILD_DIR" EXIT
+		generate_docs $BUILD_DIR
+		cd $BUILD_DIR/html
+		touch .nojekyll
+		git init
+		git add .
+		git commit -a \
+			-m "Automatically generated documentation" \
+			--author="Playfire <tech@playfire.com>"
+		git remote add origin git@github.com:playfire/${REPO}.git
+		git push -f origin HEAD:gh-pages
+		echo "Updated: http://playfire.github.com/$REPO"
+	else
+		echo "$MR_REPO has no Sphinx documentation"
+	fi
+
+git_docs = generate_docs _build/
+
+lib =
+	generate_docs() {
+		export DJANGO_SETTINGS_MODULE='g4mer.settings'
+		export PYTHONPATH=..:../../PLAYFIRE_ROOT:../../PLAYFIRE_ROOT/packages
+		make BUILDDIR=$1 -C docs clean html
+	}
+
+[django-bcrypt]
+checkout = git clone 'git@github.com:playfire/django-bcrypt.git' 'django-bcrypt'
+
+[django-cache-backed-auth]
+checkout = git clone 'git@github.com:playfire/django-cache-backed-auth.git' 'django-cache-backed-auth'
+
+[django-cache-relation]
+checkout = git clone 'git@github.com:playfire/django-cache-relation.git' 'django-cache-relation'
+
+[django-cyclebufferfield]
+checkout = git clone 'git@github.com:playfire/django-cyclebufferfield.git' 'django-cyclebufferfield'
+
+[django-dynamic-subdomains]
+checkout = git clone 'git@github.com:playfire/django-dynamic-subdomains.git' 'django-dynamic-subdomains'
+
+[django-email-from-template]
+checkout = git clone 'git@github.com:playfire/django-email-from-template.git' 'django-email-from-template'
+
+[django-enumfield]
+checkout = git clone 'git@github.com:playfire/django-enumfield.git' 'django-enumfield'
+
+[django-next-previous]
+checkout = git clone 'git@github.com:playfire/django-next-previous.git' 'django-next-previous'
+
+[django-userdata]
+checkout = git clone 'git@github.com:playfire/django-userdata.git' 'django-userdata'
+
+[django-usernamefield]
+checkout = git clone 'git@github.com:playfire/django-usernamefield.git' 'django-usernamefield'
