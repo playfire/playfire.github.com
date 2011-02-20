@@ -62,3 +62,6 @@ checkout = git clone git@github.com:playfire/django-userdata.git django-userdata
 
 [django-usernamefield]
 checkout = git clone git@github.com:playfire/django-usernamefield.git django-usernamefield
+
+[django-debug-toolbar-user-panel]
+checkout = git clone git@github.com:playfire/django-debug-toolbar-user-panel.git django-debug-toolbar-user-panel
