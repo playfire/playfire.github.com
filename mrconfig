@@ -57,6 +57,9 @@ checkout = git clone git@github.com:playfire/django-enumfield.git django-enumfie
 [django-next-previous]
 checkout = git clone git@github.com:playfire/django-next-previous.git django-next-previous
 
+[django-pedantic-http-methods]
+checkout = git clone git@github.com:playfire/django-pedantic-http-methods.git django-pedantic-http-methods
+
 [django-userdata]
 checkout = git clone git@github.com:playfire/django-userdata.git django-userdata
 
