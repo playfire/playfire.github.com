@@ -99,7 +99,7 @@ textarea, input, select
   width: 954px;
 }
 
-#top_bar h1 a
+#top_bar #pf_logo
 {
   background: url('images/pf_logo.gif') no-repeat;
   display: block;
