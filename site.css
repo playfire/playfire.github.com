@@ -75,3 +75,55 @@ textarea, input, select
 {
   height: 1%;
 }
+
+
+
+
+
+/*--- top bar ---*/
+
+#top_bar
+{
+  background-color: #333;
+  border-bottom: 5px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  min-width: 954px;
+  position: relative;
+}
+
+#top_bar > .inner
+{
+  height: 54px;
+  margin: 0 auto;
+  position: relative;
+  width: 954px;
+}
+
+#pf_logo
+{
+  display: block;
+  left: 27px;
+  position: absolute;
+  top: 14px;
+}
+
+#primary_nav_tools
+{
+  color: #fff;
+  float: right;
+  margin: 18px 27px 0 0;
+}
+
+#primary_nav_tools a,
+#logout_form button
+{
+  color: #fff;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+#primary_nav_tools a:hover,
+#logout_form button:hover
+{
+  color: #f1a002;
+}
