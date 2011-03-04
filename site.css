@@ -127,3 +127,96 @@ textarea, input, select
 {
   color: #f1a002;
 }
+
+
+
+
+
+/*--- main module ---*/
+
+#main_module
+{
+  background-color: #fff;
+  min-width: 954px;
+  padding-bottom: 36px;
+}
+
+#main_module > .inner
+{
+  margin: 0 auto;
+  padding: 27px;
+  position: relative;
+  width: 900px;
+}
+
+
+
+
+
+/*--- foooter ---*/
+
+#footer
+{
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, Helvetica, Sans-serif;
+}
+
+#footer > .inner
+{
+  margin: 0 auto;
+  padding: 36px 0 54px;
+  width: 900px;
+}
+
+/* text */
+
+#footer .text
+{
+  float: left;
+  margin-right: 36px;
+  position: relative;
+  width: 468px;
+}
+
+#footer .text .pf_logo
+{
+  background: url('images/pf_logo_med.png') no-repeat;
+  height: 38px;
+  margin-bottom: 18px;
+  text-indent: -9999px;
+  width: 143px;
+}
+
+#footer .text p
+{
+  line-height: 1.4em;
+  margin-top: 12px;
+}
+
+/* links */
+
+#footer .links
+{
+  float: left;
+  line-height: 1.8em;
+  margin-top: 27px;
+  width: 396px;
+}
+
+#footer .links > li
+{
+  float: left;
+  margin-left: 18px;
+  width: 120px;
+}
+
+#footer .links > li:first-child
+{
+  margin-left: 0;
+}
+
+#footer .links a
+{
+  color: #c4c4c4;
+}
