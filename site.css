@@ -99,12 +99,16 @@ textarea, input, select
   width: 954px;
 }
 
-#pf_logo
+#top_bar h1 a
 {
+  background: url('images/pf_logo.gif') no-repeat;
   display: block;
+  height: 24px;
   left: 27px;
   position: absolute;
+  text-indent: -9999px;
   top: 14px;
+  width: 94px;
 }
 
 #primary_nav_tools
