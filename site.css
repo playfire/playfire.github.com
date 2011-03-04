@@ -248,30 +248,3 @@ textarea, input, select
   line-height: 1.4em;
   margin-top: 12px;
 }
-
-/* links */
-
-#footer .links
-{
-  float: left;
-  line-height: 1.8em;
-  margin-top: 27px;
-  width: 396px;
-}
-
-#footer .links > li
-{
-  float: left;
-  margin-left: 18px;
-  width: 120px;
-}
-
-#footer .links > li:first-child
-{
-  margin-left: 0;
-}
-
-#footer .links a
-{
-  color: #c4c4c4;
-}
