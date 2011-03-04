@@ -168,15 +168,26 @@ textarea, input, select
 
 #projects h2
 {
+  border-bottom: 1px dotted #ddd;
+  color: #353535;
   font: bold 1.2em Arial, Helvetica, Sans-serif;
+  padding: 0 0 3px 5px;
 }
 
 #projects p
 {
-  margin: 3px 0;
+  border-left: 1px dotted #ddd;
+  padding: 3px 0;
+  padding-left: 5px;
 }
 
 /* links */
+
+#projects .links
+{
+  border-left: 1px dotted #ddd;
+  padding-left: 5px;
+}
 
 #projects .links li
 {
