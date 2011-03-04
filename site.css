@@ -141,9 +141,22 @@ textarea, input, select
 #main_module > .inner
 {
   margin: 0 auto;
-  padding: 27px;
+  padding: 36px 27px 27px;
   position: relative;
   width: 900px;
+}
+
+#main_module h1
+{
+  color: #353535;
+  font: bold 2em Arial, Helvetica, Sans-serif;
+  margin: 0 0 5px 5px;
+}
+
+#main_module h1 + p
+{
+  font-size: 1.2em;
+  padding-left: 5px;
 }
 
 
@@ -155,7 +168,7 @@ textarea, input, select
 #projects
 {
   line-height: 1.3em;
-  margin-top: 36px;
+  margin-top: 45px;
 }
 
 #projects > li
