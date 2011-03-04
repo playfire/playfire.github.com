@@ -135,7 +135,7 @@ textarea, input, select
 {
   background-color: #fff;
   min-width: 954px;
-  padding-bottom: 36px;
+  padding-bottom: 27px;
 }
 
 #main_module > .inner
@@ -144,6 +144,53 @@ textarea, input, select
   padding: 27px;
   position: relative;
   width: 900px;
+}
+
+
+
+
+
+/*--- projects ---*/
+
+#projects
+{
+  line-height: 1.3em;
+  margin-top: 36px;
+}
+
+#projects > li
+{
+  float: left;
+  margin-right: 36px;
+  min-height: 100px;
+  width: 414px;
+}
+
+#projects h2
+{
+  font: bold 1.2em Arial, Helvetica, Sans-serif;
+}
+
+#projects p
+{
+  margin: 3px 0;
+}
+
+/* links */
+
+#projects .links li
+{
+  display: inline;
+}
+
+#projects .links li:before
+{
+  content: '\00a0\00a0\2022\00a0\00a0';
+}
+
+#projects .links li:first-child:before
+{
+  content: '';
 }
 
 
