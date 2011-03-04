@@ -117,15 +117,9 @@ textarea, input, select
 #primary_nav_tools a,
 #logout_form button
 {
-  color: #fff;
+  color: #f1a002;
   font-size: 0.8em;
   text-decoration: none;
-}
-
-#primary_nav_tools a:hover,
-#logout_form button:hover
-{
-  color: #f1a002;
 }
 
 
