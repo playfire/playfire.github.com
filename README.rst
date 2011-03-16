@@ -20,3 +20,8 @@ Checking out repositories using mr
    $ mr checkout
 
  * Done!
+
+Setting your email address correctly
+====================================
+
+  $ mr run git config user.email you@playfire.com
