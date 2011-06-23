@@ -39,11 +39,8 @@ checkout = git clone git@github.com:playfire/django-append-url-to-sql.git django
 [django-bcrypt]
 checkout = git clone git@github.com:playfire/django-bcrypt.git django-bcrypt
 
-[django-cache-backed-auth]
-checkout = git clone git@github.com:playfire/django-cache-backed-auth.git django-cache-backed-auth
-
-[django-cache-relation]
-checkout = git clone git@github.com:playfire/django-cache-relation.git django-cache-relation
+[django-cache-toolbox]
+checkout = git clone git@github.com:playfire/django-cache-toolbox.git django-cache-toolbox
 
 [django-cyclebufferfield]
 checkout = git clone git@github.com:playfire/django-cyclebufferfield.git django-cyclebufferfield
