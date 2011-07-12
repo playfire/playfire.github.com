@@ -21,9 +21,9 @@ table, caption, tbody, tfoot, thead, tr, th, td
 
 body
 {
-  background-color: #333;
+  background: #fff url('images/default_bg.png') repeat-x;
   color: #555;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Arial", Helvetica, Sans-serif;
   font-size: 0.75em;
   line-height: 1;
   margin: 0;
@@ -80,12 +80,25 @@ textarea, input, select
 
 
 
+/*--- wrapper ---*/
+
+#wrapper
+{
+  margin: 27px auto 0;
+  min-height: 700px;
+  width: 954px;
+}
+
+
+
+
+
 /*--- top bar ---*/
 
 #top_bar
 {
+  background: url('images/header_bg.png') repeat-x;
   background-color: #333;
-  border-bottom: 5px solid #ccc;
   font-family: Arial, Helvetica, sans-serif;
   min-width: 954px;
   position: relative;
@@ -101,14 +114,14 @@ textarea, input, select
 
 #top_bar #pf_logo
 {
-  background: url('images/pf_logo.gif') no-repeat;
+  background: url('images/pf_logo_header.png') no-repeat;
   display: block;
-  height: 24px;
+  height: 27px;
   left: 27px;
   position: absolute;
   text-indent: -9999px;
-  top: 14px;
-  width: 94px;
+  top: 10px;
+  width: 99px;
 }
 
 #primary_nav_tools
@@ -135,13 +148,12 @@ textarea, input, select
 {
   background-color: #fff;
   min-width: 954px;
-  padding-bottom: 27px;
+  padding-bottom: 36px;
 }
 
 #main_module > .inner
 {
-  margin: 0 auto;
-  padding: 36px 27px 27px;
+  padding: 27px;
   position: relative;
   width: 900px;
 }
@@ -163,19 +175,87 @@ textarea, input, select
 
 
 
+/*--- theme blurred header ---*/
+
+.theme_blurred_header
+{
+  background: url('images/default_header.jpg') no-repeat left top;
+  height: 150px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+}
+
+.theme_blurred_header .inner
+{
+  padding: 21px 27px 0;
+}
+
+.theme_blurred_header .title
+{
+  color: #fff;
+  font-size: 1.8em;
+}
+
+/* small */
+
+.theme_blurred_header.small
+{
+  border-bottom: 4px solid #777;
+  height: 81px;
+}
+
+
+
+
+
+/*--- main module heading ---*/
+
+#main_heading
+{
+  color: #fff;
+  position: relative;
+}
+
+#main_heading .title
+{
+  font-size: 1.8em;
+  margin-bottom: 4px;
+}
+
+#main_heading .title,
+#main_heading .tagline
+{
+  text-shadow: #444 1px 1px 1px;
+  -moz-text-shadow: #444 1px 1px 1px;
+  -webkit-text-shadow: #444 1px 1px 1px;
+}
+
+#main_heading .tagline a
+{
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+
+
+
 /*--- projects ---*/
 
 #projects
 {
   line-height: 1.3em;
-  margin-top: 45px;
 }
 
 #projects > li
 {
   float: left;
   margin-right: 36px;
-  min-height: 100px;
+  min-height: 110px;
   width: 414px;
 }
 
@@ -225,7 +305,7 @@ textarea, input, select
 
 #footer
 {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
   font-family: Arial, Helvetica, Sans-serif;
 }
@@ -247,17 +327,15 @@ textarea, input, select
   width: 468px;
 }
 
-#footer .text .pf_logo
+#footer .text h5
 {
-  background: url('images/pf_logo_med.png') no-repeat;
-  height: 38px;
-  margin-bottom: 18px;
-  text-indent: -9999px;
-  width: 143px;
+  font-size: 1.4em;
 }
 
 #footer .text p
 {
+  color: #aaa;
+  font-size: 0.9em;
   line-height: 1.4em;
   margin-top: 12px;
 }
