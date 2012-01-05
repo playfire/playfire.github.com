@@ -36,6 +36,9 @@ checkout = git clone git@github.com:playfire/dmigrations.git dmigrations
 [django-append-url-to-sql]
 checkout = git clone git@github.com:playfire/django-append-url-to-sql.git django-append-url-to-sql
 
+[django-autologin]
+checkout = git clone git@github.com:playfire/django-autologin.git django-autologin
+
 [django-bcrypt]
 checkout = git clone git@github.com:playfire/django-bcrypt.git django-bcrypt
 
